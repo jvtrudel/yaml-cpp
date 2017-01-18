@@ -290,11 +290,11 @@ set_target_properties(yaml-cpp PROPERTIES
 	PROJECT_LABEL "yaml-cpp ${LABEL_SUFFIX}"
 )
 
-generate_export_header(yaml-cpp)
+#generate_export_header(yaml-cpp)
 
-#target_include_directories(yaml-cpp PUBLIC
-#  ${INCLUDE_INSTALL_DIR}/include
-#  )
+target_include_directories(yaml-cpp PUBLIC
+  ${INCLUDE_INSTALL_DIR}/include
+  )
 
 if(IPHONE)
 	set_target_properties(yaml-cpp PROPERTIES
