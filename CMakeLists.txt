@@ -289,6 +289,10 @@ set_target_properties(yaml-cpp PROPERTIES
 	SOVERSION "${YAML_CPP_VERSION_MAJOR}.${YAML_CPP_VERSION_MINOR}"
 	PROJECT_LABEL "yaml-cpp ${LABEL_SUFFIX}"
 )
+target_include_directories(yaml-cpp PUBLIC
+  ${YAML_CPP_SOURCE_DIR}/src
+  ${YAML_CPP_SOURCE_DIR}/include
+  )
 
 if(IPHONE)
 	set_target_properties(yaml-cpp PROPERTIES
