@@ -290,8 +290,7 @@ set_target_properties(yaml-cpp PROPERTIES
 	PROJECT_LABEL "yaml-cpp ${LABEL_SUFFIX}"
 )
 target_include_directories(yaml-cpp PUBLIC
-  ${YAML_CPP_SOURCE_DIR}/src
-  ${YAML_CPP_SOURCE_DIR}/include
+  ${INCLUDE_INSTALL_DIR}
   )
 
 if(IPHONE)
